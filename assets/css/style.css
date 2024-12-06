@@ -530,7 +530,8 @@ ul {
 .grid-card {
   border: 3px solid #131313;
   border-radius: 3rem;
-  padding: 3.5rem;
+  width: 28vw;
+  padding: 3.5rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -567,10 +568,14 @@ ul {
 }
 
 .grid-card p {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: bold;
   font-family: "Chakra Petch", sans-serif;
   text-align: justify;
+  line-height: 1.2;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+
 }
 
 /* end section experience */
@@ -594,7 +599,6 @@ ul {
   border-radius: 3rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  box-shadow: 8px 8px 16px rgb(0, 0, 0, 0.3);
 }
 
 .projects-card:hover {
@@ -630,7 +634,7 @@ ul {
 }
 
 .projects-card h3 {
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   text-wrap: nowrap;
   font-weight: 700;
   font-family: "Chakra Petch", sans-serif;
