@@ -52,11 +52,10 @@
         margin-bottom: .5rem;
         font-family: "Chakra Petch", sans-serif;
       }
-    
-    .projects-card{
-        width: 100%;
-        gap: 2rem;
-    }
+
+      .projects-card{
+        padding: 3rem 2.5rem;
+      }
 
     .projects-card h3 {
         font-size: 1.25rem;
@@ -156,9 +155,20 @@
         width: 80vw;
     }
 
-    .projects-card{
-        padding: 3rem 2.5rem;
+    .projects-card {
+        width: 110%;
     }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
 
     .section-title {
         font-size: 3rem;
