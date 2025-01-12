@@ -291,7 +291,7 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 9rem 12%;
+  padding: 4rem 12%;
 }
 
 #about {
@@ -635,7 +635,7 @@ ul {
 
 .projects-card h3 {
   font-size: 1.5rem;
-  text-wrap: nowrap;
+  text-wrap: wrap;
   font-weight: 700;
   font-family: "Chakra Petch", sans-serif;
   color: #212121;
@@ -721,12 +721,12 @@ ul {
 .contact form .input-box input,
 .contact form textarea {
   width: 85%;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #212121;
   color: #ffffff;
   border: 2px solid #833ae0;
   font-size: 1.5rem;
-  border-radius: 2rem;
+  border-radius: 10px;
   margin: 1rem 0;
   resize: none;
 }
