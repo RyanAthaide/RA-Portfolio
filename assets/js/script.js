@@ -42,7 +42,7 @@ window.onload = startAnimation;
 
 
 // add links aos buttons
-const btnGithub = document.querySelectorAll('.github, .btn');
+const btnGithub = document.querySelectorAll('.github, .btn-github');
 
 btnGithub.forEach(div => {
     div.addEventListener('click', () => {
