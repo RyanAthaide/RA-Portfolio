@@ -38,7 +38,7 @@
         font-size: 1rem;
     }
 
-    header .btn {
+    header .btn-github {
         display: none;
     }
 
@@ -71,17 +71,17 @@
     }
 
     .skills-card {
-        width: 10vw;
+        width: 14vw;
         padding: 1rem 1rem;
         gap: 1rem;
     }
 
-    .skills-card i {
-        font-size: 2rem;
+    .skills-card svg {
+        width: 80%;
     }
 
     .skills-card h3 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .grid {
@@ -183,12 +183,12 @@
         padding: 1.6rem 1rem;
     }
 
-    .skills-card i {
-        font-size: 2.5rem;
+    .skills-card svg{
+        width: 60%;
     }
 
     .skills-card h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .grid-card {

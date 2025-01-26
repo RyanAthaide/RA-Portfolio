@@ -1,5 +1,6 @@
 const menuIcon = document.querySelector('#menu');
 const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links a');
 
 // Função para abrir e fechar a navbar
 menuIcon.onclick = () => {
@@ -7,12 +8,13 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-times');
 };
 
-// Função para fechar a navbar ao clicar fora dela
-document.addEventListener('click', (event) => {
-    if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+// Função para fechar a navbar ao clicar no link
+// Adiciona o event listener para fechar o menu ao clicar em um link
+links.forEach(link => {
+    link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         menuIcon.classList.remove('fa-times');
-    };
+    });
 });
 
 // animation text
