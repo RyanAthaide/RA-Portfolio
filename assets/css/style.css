@@ -117,7 +117,7 @@ li a:hover::before {
   border-radius: 5rem;
   background: linear-gradient(-45deg, #c617da 0%, #40c9ff 100%);
   border: none;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .btn-github i{
   font-size: 1.3rem;
@@ -516,7 +516,7 @@ ul {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
@@ -571,11 +571,25 @@ ul {
   padding: 1rem;
   background-color: #212121;
   color: #ffffff;
-  border: 2px solid #833ae0;
-  font-size: 1.5rem;
+  border: 3px solid transparent;
+  font-size: 1.4rem;
   border-radius: 10px;
   margin: 1rem 0;
-  resize: none;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.4s ease-in-out;
+}
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: none;
+  border-color: #833ae0;
+  box-shadow: 0 0 8px #833ae0;
+}
+
+.contact form .input-box input::placeholder,
+.contact form textarea::placeholder {
+  color: #ffffff2a;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .btn-input{
@@ -585,12 +599,12 @@ ul {
   background: linear-gradient(to left, rgb(255, 0, 255), rgb(0, 157, 255));
   color: #ffffff;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   border: none;
 }
 
 .btn-input:hover{
-  animation: scaleHover .8s infinite alternate ease-in-out;
+  transform: scale(1.02);
   box-shadow: 0 0 10px rgb(0, 157, 255);
 }
 /* end section: Contact */
