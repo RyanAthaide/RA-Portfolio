@@ -2,6 +2,17 @@
 <html lang="pt-BR">
 
 <head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q92RDMXCTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q92RDMXCTW');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -316,8 +327,8 @@
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="8" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn-input" required>
+                <textarea name="" id="" cols="30" rows="8" placeholder="Your Message" name="message" required></textarea>
+                <input type="submit" value="Send Message" class="btn-input" disabled name="submit" required>
             </div>
         </form>
     </section>
