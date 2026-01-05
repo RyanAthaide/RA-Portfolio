@@ -614,6 +614,32 @@ ul {
 }
 /* end section: Contact */
 
+/* start pop-up: sucesso-form*/
+.form-feedback {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #1f2933;
+  color: #fff;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-feedback.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* end pop-up: sucesso-form*/
+
 
 /* start footer */
   .footer{
