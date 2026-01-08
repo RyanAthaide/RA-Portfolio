@@ -6,10 +6,10 @@
 
     // Disparo do evento no dataLayer
     window.dataLayer.push({
-      event: 'form_submit',
-      form_name: 'contact_form',
-      form_type: 'lead',
-      form_location: 'page_contact'
+      event: 'callback',
+      custom_section: 'contact',
+      custom_type: 'lead',
+      custom_title: 'contact_me',
     });
 
     console.log('Evento enviado para o dataLayer');
