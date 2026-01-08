@@ -2,11 +2,11 @@
 const fields = document.querySelectorAll('#contact-form input, #contact-form textarea');
 
 fields.forEach(field => {
-    field.addEventListener('focus', () => {
+    field.addEventListener('input', () => {
 
         window.dataLayer.push({
             event: 'interacao',
-            custom_section: 'çontact',
+            custom_section: 'contact',
             custom_type: 'field',
             custom_title: field.name || field.id
         });
